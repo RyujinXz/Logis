@@ -1,0 +1,14 @@
+{% extends 'global/base.html' %}
+
+{% block principal %}
+<div class="container d-flex align-items-center justify-content-center" style="min-height: 80vh;">
+  <div class="p-4 shadow" style="max-width: 500px; width: 100%; background-color: #f9f9f9; border-radius: 8px;">
+    <h3 class="text-center mb-4 text-warning">Você foi desconectado!</h3>
+    <p class="text-center">Obrigado por visitar nosso site. Esperamos vê-lo novamente em breve!</p>
+    <div class="text-center mt-4">
+      <a href="{% url 'login' %}" class="btn btn-primary">Fazer Login Novamente</a>
+      <a href="/" class="btn btn-secondary">Voltar para a Página Inicial</a>
+    </div>
+  </div>
+</div>
+{% endblock %}

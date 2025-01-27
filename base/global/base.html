@@ -1,0 +1,17 @@
+{% include "global/partials/head.html" %}
+
+<body class="index-page with-fixed-header"></body>
+    {% include "global/partials/menu.html" %}
+    <main class="main">
+
+        {% block principal%}
+        {% endblock principal%}
+        
+    </main>
+
+    {% include "global/partials/footer.html" %}
+    {% include "global/partials/script.html" %}
+
+</body>
+
+</html>

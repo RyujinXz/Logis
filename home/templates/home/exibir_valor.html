@@ -1,0 +1,10 @@
+{% extends 'global/base.html' %}
+
+
+{% block formulario %}
+    <div class="container">
+        <h1>Valor da Sessão</h1>
+        <p>O valor da sessão é: {{ login }}</p>
+        <a href="{% url 'sessao' %}" class="btn btn-primary">Voltar</a>
+    </div>
+{% endblock formulario %}

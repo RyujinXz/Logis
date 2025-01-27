@@ -1,0 +1,447 @@
+{% extends "global/base.html" %}
+
+{% block principal %}
+        <!-- Hero Section -->
+        <section id="hero" class="hero section dark-background">
+
+            <img src="/static/global/img/naruto.png" alt="" data-aos="fade-in">
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                <div class="row justify-content-start">
+                    <div class="col-lg-8">
+                        <h2>Bem-vindo à Logis!</h2>
+                        <p>A realização de um jovem de 17 anos, nascido e criado no subúrbio do Rio de Janeiro.</p>
+                        <a href="#about" class="btn-get-started">Começar</a>
+                    </div>
+                </div>
+            </div>
+
+        </section><!-- /Hero Section -->
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <span>Quem Somos<br></span>
+                <h2>Quem Somos<br></h2>
+                <p>Inovação que transforma sonhos em realidade.</p>
+            </div><!-- End Section Title -->
+
+            <div class="container">
+
+                <div class="row gy-4">
+
+                    <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">
+                        <img src="/static/global/img/harley.png" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-6 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200">
+                        <h3>Inovação e Paixão por Games</h3>
+                        <p class="fst-italic">
+                            A Logis é o sonho realizado de Matheus Lopes, um jovem de 17 anos da Baixada Fluminense.
+                            Aqui, você encontra jogos, consoles e produtos exclusivos, feitos para quem vive o universo
+                            gamer.
+                        </p>
+                        <ul>
+                            <li><i class="bi bi-check-circle"></i> <span>Compromisso com a Qualidade: Produtos
+                                    selecionados com cuidado para garantir a melhor experiência.</span></li>
+                            <li><i class="bi bi-check-circle"></i> <span>Paixão pelo Mundo Gamer: Criamos um espaço onde
+                                    você pode encontrar tudo o que ama.</span></li>
+                            <li><i class="bi bi-check-circle"></i> <span>Acreditar nos Sonhos: Somos prova de que
+                                    acreditar e transformar sonhos em realidade é possível.</span></li>
+                        </ul>
+                        <a href="#" class="read-more"><span>Leia Mais</span><i class="bi bi-arrow-right"></i></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section><!-- /About Section -->
+
+        <!-- Clients Section -->
+        <section id="clients" class="clients section light-background">
+
+            <div class="container">
+
+                <div class="swiper init-swiper">
+                    <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 40
+                },
+                "480": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 60
+                },
+                "640": {
+                  "slidesPerView": 4,
+                  "spaceBetween": 80
+                },
+                "992": {
+                  "slidesPerView": 6,
+                  "spaceBetween": 120
+                }
+              }
+            }
+          </script>
+                    <div class="swiper-wrapper align-items-center">
+                        <div class="swiper-slide"><img src="/static/global/img/clients/nintendo.png" class="img-fluid"
+                                alt=""></div>
+                        <div class="swiper-slide"><img src="/static/global/img/clients/playstation.png"
+                                class="img-fluid" alt=""></div>
+                        <div class="swiper-slide"><img src="/static/global/img/clients/xbox.png" class="img-fluid"
+                                alt=""></div>
+                        <div class="swiper-slide"><img src="/static/global/img/clients/steam.png" class="img-fluid"
+                                alt=""></div>
+                        <div class="swiper-slide"><img src="/static/global/img/clients/naruto.png" class="img-fluid"
+                                alt=""></div>
+                        <div class="swiper-slide"><img src="/static/global/img/clients/jujutsu.png" class="img-fluid"
+                                alt=""></div>
+                        <div class="swiper-slide"><img src="/static/global/img/clients/vagabond.png" class="img-fluid"
+                                alt=""></div>
+                        <div class="swiper-slide"><img src="/static/global/img/clients/crunchyroll.png"
+                                class="img-fluid" alt=""></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section><!-- /Clients Section -->
+
+        <!-- Call To Action Section -->
+        <section id="call-to-action" class="call-to-action section dark-background">
+
+            <img src="/static/global/img/wallpaper.jpg" alt="">
+
+            <div class="container">
+                <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="col-xl-10">
+                        <div class="text-center">
+                            <h3>Mangás</h3>
+                            <p>Adquira os melhores mangás em nossas lojas parceiras e aproveite descontos especiais
+                                feitos para todos que amam a cultura oriental. Mostre seu apoio ao nosso trabalho e
+                                mergulhe em histórias incríveis que vão encantar você e alimentar sua paixão pelo
+                                universo dos mangás!</p>
+                            <a class="cta-btn" href="https://www.rika.com.br/">Compre Aqui!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section><!-- /Call To Action Section -->
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio section">
+
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <span>Produtos</span>
+                <h2>Produtos</h2>
+                <p>Confira nosso catálogo repleto de produtos exclusivos e apaixonantes!</p>
+            </div><!-- End Section Title -->
+
+            <div class="container">
+
+                <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+                    <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+                        <li data-filter="*" class="filter-active">Lançamentos</li>
+                        <li data-filter=".filter-app">Nintendo</li>
+                        <li data-filter=".filter-product">PlayStation</li>
+                        <li data-filter=".filter-branding">PC</li>
+                    </ul><!-- End Portfolio Filters -->
+
+                    <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                            <img src="/static/global/img/produtos/zelda.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>The Legend of Zelda: Echoes of Wisdom</h4>
+                                <p>Salve Hyrule com a Princesa Zelda.</p>
+                                <a href="/static/global/img/produtos/zelda.jpg"
+                                    title="The Legend of Zelda: Echoes of Wisdom"
+                                    data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
+                                        class="bi bi-zoom-in"></i></a>
+                                <a href="portfolio-details.html" title="Comprar" class="details-link"><i
+                                        class="bi bi-cart"></i></a>
+                            </div>
+                        </div><!-- End Portfolio Item -->
+
+                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+                            <img src="/static/global/img/produtos/wukong.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Black Myth: Wukong</h4>
+                                <p>Enfrente seu destino na jornada para o oeste.</p>
+                                <a href="/static/global/img/produtos/wukong.jpg" title="Black Myth: Wukong"
+                                    data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
+                                        class="bi bi-zoom-in"></i></a>
+                                <a href="portfolio-details.html" title="Comprar" class="details-link"><i
+                                        class="bi bi-cart"></i></a>
+                            </div>
+                        </div><!-- End Portfolio Item -->
+
+                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+                            <img src="/static/global/img/produtos/last.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>The Last of Us Part II Remastered</h4>
+                                <p>Viva a experiência vencedora de mais de 300 prêmios de Jogo do Ano.</p>
+                                <a href="/static/global/img/produtos/last.jpg" title="The Last of Us Part II Remastered"
+                                    data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
+                                        class="bi bi-zoom-in"></i></a>
+                                <a href="portfolio-details.html" title="Comprar" class="details-link"><i
+                                        class="bi bi-cart"></i></a>
+                            </div>
+                        </div><!-- End Portfolio Item -->
+
+                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                            <img src="/static/global/img/produtos/luigi.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Luigi's Mansion 3</h4>
+                                <p>A próxima aventura fantasmagórica chega no seu Nintendo Switch em Luigi's Mansion 3!
+                                </p>
+                                <a href="/static/global/img/produtos/luigi.jpg" title="Luigi's Mansion 3"
+                                    data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
+                                        class="bi bi-zoom-in"></i></a>
+                                <a href="portfolio-details.html" title="Comprar" class="details-link"><i
+                                        class="bi bi-cart"></i></a>
+                            </div>
+                        </div><!-- End Portfolio Item -->
+
+                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+                            <img src="/static/global/img/produtos/silenthill2.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Silent Hill 2</h4>
+                                <p>Explore Silent Hill e procure a esposa falecida de James neste terror psicológico
+                                    revivido.</p>
+                                <a href="/static/global/img/produtos/silenthill2.jpg" title="Silent Hill 2"
+                                    data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                        class="bi bi-zoom-in"></i></a>
+                                <a href="portfolio-details.html" title="Comprar" class="details-link"><i
+                                        class="bi bi-cart"></i></a>
+                            </div>
+                        </div><!-- End Portfolio Item -->
+
+                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+                            <img src="/static/global/img/produtos/liesofp.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Lies of P</h4>
+                                <p>Um jogo de ação e fantasia sombria inspirado pela história clássica do Pinóquio.</p>
+                                <a href="/static/global/img/produtos/liesofp.jpg" title="Lies of P"
+                                    data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
+                                        class="bi bi-zoom-in"></i></a>
+                                <a href="portfolio-details.html" title="Comprar" class="details-link"><i
+                                        class="bi bi-cart"></i></a>
+                            </div>
+                        </div><!-- End Portfolio Item -->
+
+                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+                            <img src="/static/global/img/produtos/spiderman.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Marvel's Spider-Man 2</h4>
+                                <p>SEJAM MELHORES. JUNTOS.</p>
+                                <a href="/static/global/img/produtos/spiderman.jpg" title="Marvel's Spider-Man 2"
+                                    data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
+                                        class="bi bi-zoom-in"></i></a>
+                                <a href="portfolio-details.html" title="Comprar" class="details-link"><i
+                                        class="bi bi-cart"></i></a>
+                            </div>
+                        </div><!-- End Portfolio Item -->
+
+                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+                            <img src="/static/global/img/produtos/god.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>God of War Ragnarök</h4>
+                                <p>Embarque em uma jornada épica e comovente onde Kratos e Atreus lutam entre o desejo
+                                    de manterem-se unidos ou separar-se.</p>
+                                <a href="/static/global/img/produtos/god.jpg" title="God of War Ragnarök"
+                                    data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
+                                        class="bi bi-zoom-in"></i></a>
+                                <a href="portfolio-details.html" title="Comprar" class="details-link"><i
+                                        class="bi bi-cart"></i></a>
+                            </div>
+                        </div><!-- End Portfolio Item -->
+
+                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                            <img src="/static/global/img/produtos/marioparty.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Super Mario Party Jamboree</h4>
+                                <p>Entre numa baita duma festança!</p>
+                                <a href="/static/global/img/produtos/marioparty.jpg" title="Super Mario Party Jamboree"
+                                    data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                        class="bi bi-zoom-in"></i></a>
+                                <a href="portfolio-details.html" title="Comprar" class="details-link"><i
+                                        class="bi bi-cart"></i></a>
+                            </div>
+                        </div><!-- End Portfolio Item -->
+
+
+                    </div>
+
+                </div>
+
+        </section><!-- /Portfolio Section -->
+
+        <!-- Team Section -->
+        <section id="team" class="team section">
+
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <span>Equipe</span>
+                <h2>Equipe</h2>
+                <p>Na Logis, cada detalhe é feito com dedicação por um idealizador apaixonado por inovação e qualidade.</p>
+            </div><!-- End Section Title -->
+
+            <div class="container">
+
+                <div class="row justify-content-center align-items-center">
+
+                    <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+                        <div class="member">
+                            <img src="/static/global/img/equipe/eu.png" class="img-fluid" alt="">
+                            <div class="member-content">
+                                <h4>Matheus Lopes</h4>
+                                <span>Programador - Díscupulo de Elias</span>
+                                <p>
+                                    Idealizador, estrategista e executor: responsável por cada detalhe do projeto Logis, desde o marketing e conteúdo do site até a criação e gestão da empresa. Um verdadeiro time de um homem só, movido pela paixão e determinação.
+                                </p>
+                                <div class="social">
+                                    <a href="https://www.youtube.com/@kaizer_lm/featured" target="_blank"><i class="bi bi-youtube"></i></a>
+                                    <a href="https://steamcommunity.com/profiles/76561198348318871/" target="_blank"><i class="bi bi-steam"></i></a>
+                                    <a href="https://wa.me/5521972392745" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                                    <a href="https://www.linkedin.com/in/matheus-lopes-9729b9282/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End Team Member -->
+
+                    <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+                        <div class="member">
+                            <img src="/static/global/img/equipe/elias.png" class="img-fluid" alt="">
+                            <div class="member-content">
+                                <h4>Elias Santos</h4>
+                                <span>Mestre</span>
+                                <p>
+                                    O professor que ensinou tudo sobre Python e despertou a paixão pela programação. Um verdadeiro mentor, cuja dedicação e conhecimento foram fundamentais para transformar desafios em conquistas e sonhos em realidade. A ele, toda a gratidão e reconhecimento.
+                                </p>
+                                <div class="social">
+                                    <a href="https://www.linkedin.com/in/informatica-elias-santos/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End Team Member -->
+
+                </div>
+
+            </div>
+
+        </section><!-- /Team Section -->
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <span>Contato</span>
+                <h2>Contato</h2>
+                <p>Entre em contato conosco para tirar dúvidas, enviar sugestões ou conhecer mais sobre a Logis. Estamos sempre prontos para ajudar!</p>
+            </div><!-- End Section Title -->
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="row gy-4">
+
+                    <div class="col-lg-6">
+                        <div class="info-item d-flex flex-column justify-content-center align-items-center"
+                            data-aos="fade-up" data-aos-delay="200">
+                            <i class="bi bi-geo-alt"></i>
+                            <h3>Endereço</h3>
+                            <p>Avenida Abílio Augusto Távora, 1.111, Bairro da Luz, Nova Iguaçu, RJ, Brasil</p>
+                        </div>
+                    </div><!-- End Info Item -->
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="info-item d-flex flex-column justify-content-center align-items-center"
+                            data-aos="fade-up" data-aos-delay="300">
+                            <i class="bi bi-telephone"></i>
+                            <h3>Fale Conosco</h3>
+                            <p>(21) 97239-2745</p>
+                        </div>
+                    </div><!-- End Info Item -->
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="info-item d-flex flex-column justify-content-center align-items-center"
+                            data-aos="fade-up" data-aos-delay="400">
+                            <i class="bi bi-envelope"></i>
+                            <h3>Mande Mensagem</h3>
+                            <p>matheusmarcelino.dev@gmail.com</p>
+                        </div>
+                    </div><!-- End Info Item -->
+
+                </div>
+
+                <div class="row gy-4 mt-1">
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.0670402730693!2d-43.4651577!3d-22.762893199999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9967f809a644a3%3A0x9c3ec3d5526e1803!2sShopping%20Nova%20Igua%C3%A7u!5e0!3m2!1spt-BR!2sbr!4v1734641805466!5m2!1spt-BR!2sbr"
+                            frameborder="0" style="border:0; width: 100%; height: 400px;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div><!-- End Google Maps -->
+
+                    <div class="col-lg-6">
+                        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
+                            data-aos-delay="400">
+                            <div class="row gy-4">
+
+                                <div class="col-md-6">
+                                    <input type="text" name="name" class="form-control" placeholder="*Digite seu nome"
+                                        required="">
+                                </div>
+
+                                <div class="col-md-6 ">
+                                    <input type="email" class="form-control" name="email" placeholder="*Digite seu e-mail"
+                                        required="">
+                                </div>
+
+                                <div class="col-md-12">
+                                    <input type="text" class="form-control" name="subject" placeholder="Assunto"
+                                        required="">
+                                </div>
+
+                                <div class="col-md-12">
+                                    <textarea class="form-control" name="message" rows="6" placeholder="Mensagem"
+                                        required=""></textarea>
+                                </div>
+
+                                <div class="col-md-12 text-center">
+                                    <div class="loading">Loading</div>
+                                    <div class="error-message"></div>
+                                    <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                                    <button type="submit">Enviar Mensagem</button>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div><!-- End Contact Form -->
+
+                </div>
+
+            </div>
+
+        </section><!-- /Contact Section -->
+{% endblock principal %}

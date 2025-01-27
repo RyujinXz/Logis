@@ -1,0 +1,27 @@
+{% extends 'global/base.html' %}
+
+{% block principal %}
+<div class="container py-5">
+    <h2 class="text-center mb-4">Lista de Jogos</h2>
+    <table class="table table-striped table-hover">
+        <thead class="table-dark">
+            <tr>
+                <th>Tema</th>
+                <th>Imagem</th>
+                <th>Descrição</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for jogo in jogos %}
+            <tr>
+                <td>{{ jogo.tema }}</td>
+                <td>
+                    <img src="{{ jogo.foto.url }}" class="img-thumbnail" style="width: 100px; height: auto;">
+                </td>
+                <td>{{ jogo.conteudo }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock principal %}

@@ -1,0 +1,20 @@
+{% extends 'global/base.html' %}
+
+{% block principal %}
+
+<div class="container">
+    <h1>Usuário</h1>  
+    <form action="#" method="post">
+        {% csrf_token %} <!-- para evitar ataques -->
+        <label for="usuario">Usuário</label>
+        <input type="text" class="form-control" name="usuario">
+        <br>
+        <button class="btn btn-primary">Enviar</button>
+        <a href="{% url 'exibir_valor' %}" class="btn btn-primary">Valor da Sessão</a>
+    </form>
+</div>
+</body>
+</html>
+
+
+{% endblock principal %}   
