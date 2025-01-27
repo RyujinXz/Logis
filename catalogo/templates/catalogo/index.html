@@ -9,6 +9,8 @@
                 <th>Tema</th>
                 <th>Imagem</th>
                 <th>Descrição</th>
+                <th>Preço</th>
+                <th>Comprar</th>
             </tr>
         </thead>
         <tbody>
@@ -19,6 +21,8 @@
                     <img src="{{ jogo.foto.url }}" class="img-thumbnail" style="width: 100px; height: auto;">
                 </td>
                 <td>{{ jogo.conteudo }}</td>
+                <td>R$ {{ jogo.preco }}</td>
+                <td> <a href=""><i class="bi bi-cart"></i></a> </td>
             </tr>
             {% endfor %}
         </tbody>
