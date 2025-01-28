@@ -22,7 +22,11 @@
                 </td>
                 <td>{{ jogo.conteudo }}</td>
                 <td>R$ {{ jogo.preco }}</td>
-                <td> <a href=""><i class="bi bi-cart"></i></a> </td>
+                <td> 
+                    <button class="btn btn-success" onclick="window.location.href='{% url 'adicionarCarrinho' jogo.id    %}'">
+                        <i class="fas fa-shopping-cart"></i> 
+                    </button> 
+                </td>
             </tr>
             {% endfor %}
         </tbody>

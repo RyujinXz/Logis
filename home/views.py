@@ -1,8 +1,9 @@
-from django.shortcuts import render
+from django.shortcuts import redirect, render
 from .models import LogisNews
 from rest_framework import viewsets
 from catalogo.serializers import CatalogoSerializer
 from catalogo.models import Catalogo
+import urllib.parse
 
 # Create your views here.
 def home(request):
@@ -83,4 +84,6 @@ def encerrar_sessao(request):
     request.session.clear()
     
     return exibir_valor(request)
+
+
 

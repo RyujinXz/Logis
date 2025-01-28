@@ -3,7 +3,6 @@ from rest_framework import viewsets
 from catalogo.serializers import CatalogoSerializer
 from catalogo.models import Catalogo
 
-
 # Create your views here.
 def jogo(request):
     contexto = {

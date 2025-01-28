@@ -1,4 +1,5 @@
 from django.db import models
+from catalogo.models import Catalogo
 
 # Create your models here.
 class LogisNews(models.Model):
@@ -8,4 +9,3 @@ class LogisNews(models.Model):
 
     def __str__(self):
         return self.email
-

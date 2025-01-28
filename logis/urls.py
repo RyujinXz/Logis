@@ -14,6 +14,7 @@ urlpatterns = [
     path('', include('home.urls')),
     path('home/', include('home.urls')),
     path('catalogo/', include('catalogo.urls')),
+    path('carrinho/', include('carrinho.urls')),
 ]
 
 #Adicione URLs de autenticação de site Django (para login, logout, gerenciamento de senha)
