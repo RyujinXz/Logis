@@ -1798,3 +1798,21 @@
 .login-form .text-danger:hover {
   color: color-mix(in srgb, var(--accent-color), transparent 40%);
 }
+
+.loading {
+  color: #fff;
+  font-weight: bold;
+  display: none;
+}
+
+.error-message {
+  color: #f00;
+  font-weight: bold;
+  display: none;
+}
+
+.sent-message {
+  color: #0f0;
+  font-weight: bold;
+  display: none;
+}

@@ -32,7 +32,7 @@ def finalizarCompra(request):
     ItemCarrinho.objects.filter(id__in=[item.id for item in itens]).delete()
 
     url = f"https://api.whatsapp.com/send?phone=+5521972392745&text={urllib.parse.quote(mensagem)}"
-    return redirect(url, target="blank")
+    return redirect(url, target="_blank")
 
 def removerCarrinho(request, jogoId):
     itens = ItemCarrinho.objects.filter(id=jogoId)

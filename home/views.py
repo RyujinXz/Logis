@@ -1,15 +1,27 @@
 from django.shortcuts import redirect, render
+from django.contrib import messages
 from .models import LogisNews
+from .models import JogoHome
 from rest_framework import viewsets
 from catalogo.serializers import CatalogoSerializer
 from catalogo.models import Catalogo
-import urllib.parse
+from .models import Contato
 
 # Create your views here.
 def home(request):
+    jogos = JogoHome.objects.all()
+
+    contexto = {
+        'jogos_lancamento': jogos.filter(eh_lancamento=True),
+        'jogos_nintendo': jogos.filter(categoria='nintendo'),
+        'jogos_playstation': jogos.filter(categoria='playstation'),
+        'jogos_pc': jogos.filter(categoria='pc'),
+    }
+
     return render(
         request,
-        'home/index.html'
+        'home/index.html',
+        contexto
     )
 
 destinatarios = LogisNews.objects.all()
@@ -85,5 +97,18 @@ def encerrar_sessao(request):
     
     return exibir_valor(request)
 
+def salvar_contato(request):
+    if request.method == "POST":
+        nome = request.POST.get('name')
+        email = request.POST.get('email')
+        assunto = request.POST.get('subject')
+        mensagem = request.POST.get('message')
 
+        try:
+            Contato.objects.create(nome=nome, email=email, assunto=assunto, mensagem=mensagem)
+            messages.success(request, "Sua mensagem foi enviada com sucesso!")
+        except Exception as e:
+            messages.error(request, "Ocorreu um erro ao enviar a mensagem. Tente novamente.")
+            print(e)
 
+        return redirect('home')

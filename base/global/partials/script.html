@@ -7,12 +7,55 @@
 
 <!-- Vendor JS Files -->
 <script src="/static/global/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="/static/global/vendor/php-email-form/validate.js"></script>
+<!-- <script src="/static/global/vendor/php-email-form/validate.js"></script> -->
 <script src="/static/global/vendor/aos/aos.js"></script>
 <script src="/static/global/vendor/swiper/swiper-bundle.min.js"></script>
 <script src="/static/global/vendor/glightbox/js/glightbox.min.js"></script>
 <script src="/static/global/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
 <script src="/static/global/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+<!-- Script para manipular o estado do formulário -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const form = document.querySelector('.php-email-form');
+        const loading = document.querySelector('.loading');
+        const errorMessage = document.querySelector('.error-message');
+        const sentMessage = document.querySelector('.sent-message');
+
+        if (form) {
+            form.addEventListener('submit', async (e) => {
+                e.preventDefault(); // Previne o comportamento padrão do formulário
+
+                // Exibe o estado de carregamento
+                loading.style.display = 'block';
+                errorMessage.style.display = 'none';
+                sentMessage.style.display = 'none';
+
+                try {
+                    // Envia o formulário
+                    const response = await fetch(form.action, {
+                        method: 'POST',
+                        body: new FormData(form),
+                    });
+
+                    if (!response.ok) {
+                        throw new Error('Erro ao enviar o formulário');
+                    }
+
+                    // Exibe mensagem de sucesso
+                    loading.style.display = 'none';
+                    sentMessage.style.display = 'block';
+                    form.reset(); // Limpa o formulário após o envio bem-sucedido
+                } catch (error) {
+                    // Exibe mensagem de erro
+                    loading.style.display = 'none';
+                    errorMessage.style.display = 'block';
+                    console.error(error);
+                }
+            });
+        }
+    });
+</script>
 
 <!-- Main JS File -->
 <script src="/static/global/js/main.js"></script>
